@@ -1,0 +1,13 @@
+<%= notice %>
+
+<h1>Tweets#show</h1>
+<p>Find me in app/views/tweets/show.html.erb</p>
+
+
+<h3><%= @tweet.name %> Said:</h3>
+<p><%= @tweet.message %></p>
+<p><%=@tweet.id%></p>
+
+<%= link_to "Back", root_path %>
+
+<%= link_to "Edit", edit_tweet_path(id: @tweet.id)%>
